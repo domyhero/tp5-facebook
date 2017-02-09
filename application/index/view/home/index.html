@@ -589,10 +589,8 @@ function delFriend(fid){
 
 }
 
-// 删除朋友 取消关注
+// 添加 关注
 function addFriend(fid){
-
-	layer.confirm('真的要关注?', {icon: 3, title:'关注提示'}, function(index){
 
 		$.post("{:url('/Search/addFriend')}", { "fid": fid, },
 			function(data){
@@ -610,8 +608,6 @@ function addFriend(fid){
 			}
 		);	
 
-	layer.close(index);
-	});
 
 }
 

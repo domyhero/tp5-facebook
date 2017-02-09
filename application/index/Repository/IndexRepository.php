@@ -283,7 +283,16 @@ class IndexRepository
         return $users? ['code'=>1,'msg'=>'删除成功!'] : ['code'=>-1,'msg'=>'删除失败!'];		
 	}
 
+	// 推荐用户
+	public function hotUser(){
+		$params=$this->myFriends();
+		$params=implode(',',$params).','.Session::get('uid','think');
 
+		return Userinfos::field('name,head,uid')
+		->where('uid','not in', $params)
+		->limit(10)
+		->select();
+	}
 
 
 }

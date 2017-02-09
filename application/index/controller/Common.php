@@ -5,6 +5,7 @@ use think\Controller;
 use think\Request;
 use think\Session;
 use app\index\model\Users;
+use app\index\repository\IndexRepository;
 
 class Common extends Controller
 {
@@ -19,8 +20,11 @@ class Common extends Controller
     
     public function userInfo(){
         $user = Users::find( Session::get('uid','think') );
-        // is_object( $user ) || die('数据不存在');
-		$this->assign(['info'=>$user->getInfo]);    
+        $index = new IndexRepository();;
+		$this->assign([
+            'info'      =>  $user->getInfo,
+            'hotUser'   =>  $index->hotUser(),
+        ]);    
 
     }
 
