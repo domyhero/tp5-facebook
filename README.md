@@ -75,7 +75,7 @@ www  WEB部署目录（或者子目录）
 > 上面的目录结构和名称是可以改变的，这取决于你的入口文件和配置参数。
 
 ## 使用
- + 1.修改 config.php
+  1.修改 config.php
  
      // 视图输出字符串内容替换
     'view_replace_str'       => [
@@ -83,7 +83,7 @@ www  WEB部署目录（或者子目录）
         '__PUBLIC__' =>   '/tp5/public',         // 静态资源存放目录
     ],
 
- + 2.数据库配置
+  2.数据库配置
      return [
         // 数据库类型
         'type'            => 'mysql',
@@ -131,7 +131,7 @@ www  WEB部署目录（或者子目录）
         'query'           => '\\think\\db\\Query',
     ];
 
- + 3.数据库创建
+  3.数据库创建
      命令行切换到tp所在目录
      php think migrate:run
      注：详细命令 php think
