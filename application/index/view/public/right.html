@@ -1,0 +1,67 @@
+	<!-- right -->
+	<div class="col-sm-3 col-md-3 hidden-xs" style="margin-left:1%;" >
+		<div class="right-main">	
+			<ul class="nav nav-pills nav-stacked nav-left" role="tablist">
+			  <li><span>可能认识的人</span></li>
+
+			
+			<!-- list -->
+			  <li role="presentation" class="col-sm-12 col-md-12 col-lg-12"> 
+			    <a href="#" class="col-sm-12 col-md-12 col-lg-12">
+			      <img src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg" alt="" width="50px" height="50px" class="pull-left">
+			      <div class="pull-left" style="position:relative;top:-0.5em;padding-left:0.8em;">
+				      <lable> <strong> bool </strong> </lable> <br>
+				      <lable style="color:#90949C;">3个共同好友</lable>	<br>
+				      <button type="button" class="btn btn-default btn-sm icon-plus" >&nbsp;加为好友 </button>
+			      </div>
+			      <i class="icon-remove pull-right" onclick="closeFriend(this)"></i>
+			    </a>
+			  </li>
+			<!-- list -->
+			
+			<!-- list -->
+			  <li role="presentation" class="col-sm-12 col-md-12 col-lg-12"> 
+			    <a href="#" class="col-sm-12 col-md-12 col-lg-12">
+			      <img src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg" alt="" width="50px" height="50px" class="pull-left">
+			      <div class="pull-left" style="position:relative;top:-0.5em;padding-left:0.8em;">
+				      <lable> <strong> bool </strong> </lable> <br>
+				      <lable style="color:#90949C;">3个共同好友</lable>	<br>
+				      <button type="button" class="btn btn-default btn-sm icon-plus" >&nbsp;加为好友 </button>
+			      </div>
+			      <i class="icon-remove pull-right" onclick="closeFriend(this)"></i>
+			    </a>
+			  </li>
+			<!-- list -->
+						
+
+			</ul>					
+		</div>	
+	</div>
+	<!-- right -->
+
+
+<script>
+function closeFriend(obj){
+	$(obj).hide();
+	$(obj).parent().hide();
+} 
+
+function addFriend(fid){
+	$.post("{:url('/Search/save')}", { "fid": fid, },
+   		function(data){
+		   if (data.code>0) {
+				layer.msg(data.msg);
+				setTimeout(function(){
+				window.location.reload(); 
+				},1000);
+				// console.log(data);
+			}else{
+				layer.msg(data.msg);	
+				// console.log(data);
+			}
+   		}
+    );	
+
+}
+
+</script>
