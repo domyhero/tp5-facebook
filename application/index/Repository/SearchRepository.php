@@ -31,6 +31,7 @@ class SearchRepository
     }
 
 
+
     //筛选我的已经添加的好友
     public function searchFriend(){
         $res = $this->search();
@@ -53,6 +54,9 @@ class SearchRepository
         return $temp;
     }
 
+
+
+    //添加
     public function addFriend(){
         $fid = Request::instance()->param('fid');
         $param = [
