@@ -3,6 +3,8 @@ ThinkPHP 5.0  for facebook
 
 采用ThinkPHP5+bootstrap+layer
 
+=vendor public因为权限问题,无法上传，解压static解压到public目录，vendor可以从官方tp5.05提取出来=
+
  + 发布微博
  + 发布评论
  + 个人资料
@@ -18,22 +20,8 @@ ThinkPHP 5.0  for facebook
 
 详细开发文档参考 [ThinkPHP5完全开发手册](http://www.kancloud.cn/manual/thinkphp5)
 
-## 目录结构
-初始的目录结构如下：
 
-~~~
-www  WEB部署目录（或者子目录）
-├─application           应用目录
-│  ├─common             公共模块目录（可以更改）
-│  ├─module_name        模块目录
-│  │  ├─config.php      模块配置文件
-│  │  ├─common.php      模块函数文件
-│  │  ├─controller      控制器目录
-│  │  ├─Repository      逻辑层理
-│  │  ├─validate        验证文件
-│  │  ├─model           模型目录
-│  │  ├─view            视图目录
-│  │  └─ ...            更多类库目录
+
 
 > 切换到public目录后，启动命令：php -S localhost:8888  router.php
 
