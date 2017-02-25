@@ -38,6 +38,8 @@ ThinkPHP 5.0  for facebook
 
 
   2.数据库配置
+  
+  
         return [
            // 数据库类型
            'type'            => 'mysql',
