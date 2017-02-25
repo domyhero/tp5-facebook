@@ -22,6 +22,7 @@ ThinkPHP 5.0  for facebook
  + 转发
  +...
  
+ 
 > ThinkPHP5的运行环境要求PHP5.4以上。
 
 详细开发文档参考 [ThinkPHP5完全开发手册](http://www.kancloud.cn/manual/thinkphp5)
@@ -41,6 +42,15 @@ ThinkPHP 5.0  for facebook
         '__STATIC__' =>   '/tp5/public/static',         // 静态资源存放目录
         '__PUBLIC__' =>   '/tp5/public',         // 静态资源存放目录
     ],
+    
+    
+    例子：
+    
+    'view_replace_str'       => [
+        '__STATIC__' =>   '/tp5-facebook/public/static',         // 静态资源存放目录
+        '__PUBLIC__' =>   '/tp5-facebook/public',         // 静态资源存放目录
+    ],
+        
     
     
   tp5是项目的目录名称，必须更改
