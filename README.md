@@ -3,7 +3,7 @@ ThinkPHP 5.0  for facebook
 
 采用ThinkPHP5+bootstrap+layer
 
-## vendor public因为权限问题,无法上传，解压static解压到public目录，vendor可以从官方tp5.05提取出来
+## vendor和public目录因为权限问题,无法上传，解压static解压到public目录，vendor可以从官方tp5.05提取出来
 
 
  + 发布微博
