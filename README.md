@@ -26,13 +26,16 @@ ThinkPHP 5.0  for facebook
 > 切换到public目录后，启动命令：php -S localhost:8888  router.php
 
 ## 使用
+
   1.修改 config.php
+  
  
      // 视图输出字符串内容替换
     'view_replace_str'       => [
         '__STATIC__' =>   '/tp5/public/static',         // 静态资源存放目录
         '__PUBLIC__' =>   '/tp5/public',         // 静态资源存放目录
     ],
+
 
   2.数据库配置
         return [
@@ -81,6 +84,7 @@ ThinkPHP 5.0  for facebook
            // Query类
            'query'           => '\\think\\db\\Query',
        ];
+
 
 
   3.数据库创建
