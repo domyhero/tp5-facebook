@@ -102,7 +102,12 @@ ThinkPHP 5.0  for facebook
    php think migrate:run
 
    注：详细命令 php think
-
+   
+   
+   访问
+   
+   + http://localhost/项目目录名/public/index.php/login/index.html
+   
 ## 版权信息
 
 本项目由布尔开发。
