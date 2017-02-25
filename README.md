@@ -94,10 +94,15 @@ www  WEB部署目录（或者子目录）
            'query'           => '\\think\\db\\Query',
        ];
 
+
   3.数据库创建
+
    命令行切换到tp所在目录
+
    php think migrate:run
+
    注：详细命令 php think
+
 ## 版权信息
 
 本项目由布尔开发。
