@@ -33,17 +33,21 @@ ThinkPHP 5.0  for facebook
 
 ## 使用
 
-  1.修改 config.php
-  
+  1.修改 config.php，必须配置，不然css、js、images无法加载
+  
  
      // 视图输出字符串内容替换
     'view_replace_str'       => [
         '__STATIC__' =>   '/tp5/public/static',         // 静态资源存放目录
         '__PUBLIC__' =>   '/tp5/public',         // 静态资源存放目录
     ],
-
-
-  2.数据库配置
+    
+    
+  tp5是项目的目录名称，必须更改
+ 
+ 
+ 
+  2.数据库配置
   
   
         return [
@@ -107,6 +111,8 @@ ThinkPHP 5.0  for facebook
    访问
    
    + http://localhost/项目目录名/public/index.php/login/index.html
+   
+   +这里的项目目录就是上面配置css、js的路径，默认为 /tp5-facebook
    
 ## 版权信息
 
