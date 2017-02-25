@@ -6,6 +6,11 @@ ThinkPHP 5.0  for facebook
 ## vendor和public目录因为权限问题,无法上传，解压static解压到public目录，vendor可以从官方tp5.05提取出来
 
 
+微云下载链接
++ https://share.weiyun.com/982221916b9082b46d3f6e7b4729369a
+
+
+
  + 发布微博
  + 发布评论
  + 个人资料
