@@ -133,3 +133,15 @@ ThinkPHP 5.0  for facebook
 ## 版权信息
 
 本项目由布尔开发。
+
+## 演示
+
+<img  width="560" height="285" src="http://imgsrc.baidu.com/forum/w%3D580/sign=b32e546bde2a60595210e1121835342d/e6116e061d950a7be029f66603d162d9f2d3c90a.jpg">
+
+<img width="560" height="277" src="http://imgsrc.baidu.com/forum/w%3D580/sign=e600ded1f2f2b211e42e8546fa816511/8c8e59ee3d6d55fb44c3ce8464224f4a20a4dd21.jpg">
+
+
+<img width="560" height="277" src="http://imgsrc.baidu.com/forum/w%3D580/sign=427315b07b0e0cf3a0f74ef33a47f23d/70ad4aed2e738bd4613d0a93a88b87d6277ff90a.jpg">
+
+<img width="560" height="267" src="http://imgsrc.baidu.com/forum/w%3D580/sign=98d5f3ac6e09c93d07f20effaf3cf8bb/0df6ce1b9d16fdfafe937f4cbd8f8c5495ee7baa.jpg" >
+
