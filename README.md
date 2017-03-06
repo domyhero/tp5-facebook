@@ -34,7 +34,7 @@ ThinkPHP 5.0  for facebook
 
 ## 使用
 
-  1.修改 config.php，必须配置，不然css、js、images无法加载
+  1.修改 /application/config.php，必须配置，不然css、js、images无法加载
   
  
      // 视图输出字符串内容替换
